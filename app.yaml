@@ -1,0 +1,18 @@
+apiVersion: 0.1.0
+environments:
+  preprod:
+    destination:
+      namespace: argo-cd-hello-world
+      server: https://kubernetes.default.svc
+    k8sVersion: v1.10.5
+    path: preprod
+kind: ksonnet.io/app
+name: argo-cd-hello-world
+registries:
+  incubator:
+    gitVersion:
+      commitSha: 40285d8a14f1ac5787e405e1023cf0c07f6aa28c
+      refSpec: master
+    protocol: github
+    uri: github.com/ksonnet/parts/tree/master/incubator
+version: 0.0.1
