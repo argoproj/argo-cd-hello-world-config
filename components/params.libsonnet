@@ -3,7 +3,7 @@
   },
   components: {
     "hello-world-ks": {
-      containerPort: 8080,
+      containerPort: 8082,
       replicas: 1,
       servicePort: 8080,
       type: "ClusterIP",
